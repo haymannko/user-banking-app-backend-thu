@@ -7,7 +7,7 @@ on:
   push:
     branches:
       - dev
-      - main
+      - app/*
     paths:
       - '**/Dockerfile'
       - '.github/workflows/docker-ci.yml'
@@ -16,6 +16,7 @@ on:
     branches:
       - main
       - dev
+      - app/*
 
 jobs:
   build-and-scan:
